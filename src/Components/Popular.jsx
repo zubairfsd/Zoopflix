@@ -16,7 +16,7 @@ function Popular() {
     document.title = 'zoopflix | popular' + category.toUpperCase()
     const Navigate = useNavigate()
   
-    const Getpopular = async ()=>{
+    const Getpopular = async () =>{
       try {
         const {data} = await axios.get(`/${category}/popular?page=${page}`);
         // console.log(data);
